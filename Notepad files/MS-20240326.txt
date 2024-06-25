@@ -1,0 +1,1801 @@
+=======
+JDBC : Connecting to database with Java program to perform DB operations
+
+				 JDBC
+		Java App  -------------------------- Database
+
+	Servlets : To make our application as web application
+              (Everybody can access our application using internet)
+
+	JSP : Java Server Pages (User interface) --- Outdatd in the market
+	Note: People are using JS technologies (Angular & React) For Frontend Development.
+
+# Hibernate
+----------
+-> Hibernate is an ORM framework
+-> Hibernate Framework is developed on top of JDBC
+-> Hibernate framework providing few common logic to perform DB operations
+   (driver loading, connections, cpool, transcations, exceptions etcc)
+
+
+      Java App -----------> Hibernate --------> JDBC ----------> Database
+
+
+
+# Spring Framework
+-----------------
+-> Spring is an application development framework
+-> Using Spring we can develop applications with loosely coupling
+-> Standalone, web, distributed applications can be developed using Spring
+-> In Spring Framework we have to take of configurations
+
+# Spring Boot
+-----------
+-> Spring Boot is one approach to develop Spring Based applications
+-> The main advantage of Spring Boot is Auto-Configuration
+-> Spring Boot is trending in the market
+
+# REST APIs
+---------
+-> REST APIs are used to develop distributed applications
+-> If one application is communicating with another application then we will call it as distributed application
+-> Application Backeng logics are implementing using REST APIs
+
+# Microservices
+-------------
+-> Microservices is a design Pattern to develop applications with loosely coupled functionalities
+
+
+Note: Now a days we are using Spring Boot to develop Back End Rest APIs by following Microservices Design Pattern
+
+1.Build Tools : Ant, Maven and Gradle
+
+		- Project Creation
+		- Dependencies/Jars downloading
+		- Project Compilation
+		- Execute Unit Test Cases
+		- Project Packaging (jar or war)
+
+2) Code Repository Tools : SVN, GIT Hub and BitBucket
+                                          - Code Integration at one place
+		- Monitored Access (who, when, why and what)
+
+3) Project Management Tool : JIRA
+                                         - Project work planning
+		- Work allocation to team members
+		- Work status tracking
+		- Bug Reporting
+4) Logging Tools : Log4J, Log4J2, Logback, Logstash & SLF4J
+                                         - To generate log messages of application
+		- Tracking Application execution details
+		- Tracking Exceptions Occured in application
+
+5) Log Monitoring Tools : Putty, WinScp and Splunk
+                                        - To see log messages of our application
+
+6) Code Review Tools : PMD and Sonar Qube
+                                     - To find developer mistakes in the code
+
+7) Unit Testing Tool : JUNIT with Mocking
+                                            - To test unit amount of work
+		 - Junit is used to automate unit testing
+		 - Mocking is used for isolated unit testing
+8) Code Coverage : Jacocco and Cobertura
+                                          - To identify how many lines executed in unit testing
+		 - It will provide lines executed and lines not executed
+		 - Code Coverage report will help to improve unit testing scenarios
+
+9) CI CD Deployment Tools : Jenkins   - To automate application deployment process  and  - Deployment Schedules
+10) API Testing tool : Postman and Swagger UI
+                                          - To test backend rest apis
+		 - Swagger can generate rest api documentation also
+
+11) Containerization Tool : Docker
+                                         - To generate application and its dependencies as one container
+
+12) Orchestration Tool : Kubernetes (K8S)
+                                         - To deploy docker containers on cluster
+
+13) Reports Generation : Apache POI (Excel) & IText API (PDF)
+                                            - Excel Report generation
+		   - Pdf report
+
+14) Message Queue : Apache Kafka
+                                             - To process stream of data
+
+15) Distributed Cache : Redis Cache
+                                              - Cache is used to reduce no.of db calls
+		   - Cache is used to improve performance of the application
+
+16) Performance Testing : JMETER and HP Load Runner
+		- To test application stability and responsiveness
+=> Along with coding we should have practical knowledge on above tools also
+
+================GOALS==========
+
+# Maven Goals  :-
+--------------------------------
+-> In maven we have several goals to perform build process
+
+-> Every Maven goal is associated with one maven plugin
+
+-> Plugin is going to perform actual task of the goal.
+
+
+1)  clean    : It is used to delete target folder in our project
+2) compile  : It is used to compile all the java clases in our project (generates .class files)
+3) test     :      It is used to execute junit classes (unit test execution)
+4) package  : It is used to package our application as jar or war file (artifact generation)
+5) install  : To make our project as dependency in maven repository. So other apps can use this   dependency
+
+# Dependency Scopes In Maven :-
+---------------------------------
+-> Dependency scope will represent when to use that depedency in our project 
+             (when to include that dependency in the class path)
+
+-> We have below 6 scopes for dependencies in maven
+
+1) compile (it is default scope)
+2) runtime
+3) test
+4) provided
+5) system
+6) import
+
+(# these all are frequently used git commands)
+
+git config
+git init
+git status
+git add <filename>
+git add --a
+git commit -m 'msg'
+git restore
+git remote add orgin <repo-url>
+git push
+git pull
+git log
+git clone
+git stash (interview command)
+git stash apply (inteview command)
+git diff  (diff command is used to compare the files)
+
+(git merge and rebash command very imp for interview)
+
+
+
+
+
+===================
+
+Note: 'upsert' means it is used for inserting and updating 
+	(if record already available then update else insert
+===============
+-> Eureka Discovery Client applications are auto-registering with Eureka Server when port is 8761
+=============
+#datasource properties for H2 DB
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa                                 ///Embeded DB h2 
+spring.datasource.password=sa
+spring.datasource.driver-class-name=org.h2.Driver
+
+=======
+Entity class and map with DB table using JPA annotations
+        a) @Entity
+	b) @Table
+	c) @Id
+	d) @GeneratedValue
+	e) @Column
+
+============
+today: 
+git with 3d
+
+
+==================
+-> Swagger is a third party api .
+-> Swagger is used to generate documentation for REST API .
+-> Swagger UI is available to test REST API .
+-> Swagger UI provides beautiful User interface to test REST api .
+-> To use swagger in our project, we should add below dependencies .
+
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.8.0</version>
+</dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.8.0</version>
+</dependency>
+
+-> After adding dependency, we need to create SwaggerConfig class. In this class we will specify for which classes it has to generate documentation.
+
+================
+}
+# Swagger URLS :-
+--------------------
+For Json documentation : http://localhost:8080/v2/api-docs
+For Swagger UI : http://localhost:8080/swagger-ui.html
+
+===========
+
+
+
+# Sonar Qube
+-----------------------------------------------------------------------------
+
+-> Sonar Qube is an automatic code review tool
+
+-> Sonar Qube supports for 29 programming languages
+
+-> Sonar Qube will identify 
+
+		1) Bugs
+		2) Vulnerabilities
+		3) Code Smells
+		4) Duplicate Code Blocks
+
+Note: SonarQube will not check our logic is correct not
+
+-> By Default Sonar Server will run on 9000 port number (We can customize port number)
+
+public void findNonRepeatedCharInString(String str){
+
+    //logic to find
+}
+
+Note:  Juniour developers code checking will done by seniour developers in the team. This is called as Peer Review. Peer Review is a manual process. In peer review, logic checking will be done.
+
+#Bugs: bugs means problem will come
+#Vulnebirability: vulnebirality means security issue (like do not use PWd name any variable better to use Passzwd)
+#Code Smell : code smell means suggestations and recommendations
+
+
+======================SPRING CLOUD API GATEWAY=============
+
+-> In Spring Cloud, we have 2 options to create API Gateway
+
+				1) Zuul Proxy (old approach)
+				2) Spring Cloud Gateway (latest approach)
+
+
+Note: Zuul Proxy is not supported by latest versions of spring boot
+-----------------------------------------------------------------------------
+In API gateway we will have 3 types of logics
+
+1) Route
+2) Predicate
+3) Filters
+
+-> Routing is used to defined which request should be processed by which REST API in backend. Routes will be configured using Predicate
+
+-> Predicate : This is a Java 8 Function Predicate. The input type is a Spring Framework ServerWebExchange. This lets you match on anything from the HTTP request, such as headers or parameters.
+
+-> Filters are used to manipulate incoming request and outgoing response of our application
+
+Note: Using Filters we can implement security also for our application.
+-> We can validate client given token in the request using Filter for security purpose
+
+-> We can write request and response tracking logic in Filter
+
+-> Filters are used to manipulate request & response of our application
+
+-> Any cross-cutting logics like security, logging, moniroing can be implemented using Filters
+
+==============# Sleuth & Zipkin :-================
+-> Microservices application means several REST APIs will be available
+
+-> As part of application execution one Rest API can communicate another REST API
+
+-> When we send request from UI, it will process by Multiple REST APIs with Interservice communication
+
+
+*** How we can understand which rest api is taking more time to process request ? ***
+
+-> If we add Sleuth dependency in REST API then it will add span-id and trace-id for log messages
+
+-> For every request once span-id will be generated by Sleuth
+
+-> If one request is processing multiple REST API then Sleuth will use same span-id for REST APIs to generate log message
+
+-> Trace-id is specific to one REST API
+
+-> By using span-id and trace-id we can understand which REST api has taken more time process request
+
+-> To monitor span-id and trace-id details we will use ZipKin server
+
+-> Zipkin server is providing user interface (UI) to monitor all the details
+
+Note: The REST APIs which are having sleuth dependency should register with Zipkin server
+
+
+Note: By using Sleuth and Zipkin we achieve Distributed Log Tracing
+
+
+Note: Zipkin server runs on 9411 port
+
+===================Random.nextInt()============
+
+4) Instead of Math.random( ) use java.util.Random.nextInt ( ) method to generate random number
+
+2) Replace StringBuffer with StringBuilder to improvate performance
+
+		StringBuffer -> is synchronized (only one thread can access at a time)
+
+		StringBuilder -> is not-syncronized (multiple threads can access at a time)
+
+ 6) Don't use "password" or "pwd" in our code directley. It will be considered as vulnerable. Use "pazzword" or "pzzwd" for variable names.
+
+=============================SYNCHRONIZED CLASS-----------------
+It is better to use their new unsynchronized replacements:
+•	ArrayList or LinkedList instead of   ---------------> Vector
+•	Deque instead of                     ---------------> Stack
+•	HashMap instead of                                    Hashtable
+•	StringBuilder instead of                              StringBuffer
+
+
+***vector,stack,stringBuffer,hashTable are the synchronized classes
+
+=================Major Project 
+
+# Major Project Discussion
++++++++++++++++++++++++++++
+
+-> In USA 50+ states are available
+-> Every state will have state goverment
+-> For all the states they have Federal Govt
+
+Note: USA federal govt & state govt providing some health & insurance benefits to USA citizens
+
+-> To provide health & insurance benefits, USA govt needs one software project.
+
+-> We are developing a state govt project For New Jersey State
+-----------------------------------------------------------------------------
+Client : New Jersey State Govt
+
+Project Name : Integrated Health Insurance System (IHIS)
+
+Type : Intranet Project (This project is accessible with in New Jersey state DHS Offices)
+
+Note: DHS stands for Department of Health Insurance System
+
+-> DHS department employees are called as Case Workers. Only Case Workers can access our IHIS application with in DHS offices.
+
+ # Project Description
+-----------------------
+-> The main aim of IHIS is to provide fully integrated health insurance system for New Jersey state govt, to provide health & insurance plans for New Jersey State Citizens.
+
+-> Using this project New Jersey State govt providing below plans for New Jersey State Citizens
+
+			1) SNAP (Supplemental Nutrition Assistance Program)
+
+			2) CCAP (Child Care Assistance Program)
+
+			3) Medicaid  (Health plan)
+
+			4) Medicare (Health Plan)
+
+			5) QHP  (Qualified health plan, Commercial )
+
+			6) NJW ( New Jersey Works - Unemployment Plan )
+
+(Note :- this is a dilloit company project so don’t put this project for dillot company and in realtime there are 24 plans and 24 modules )
+
+===================CLOUD SERVICES================
+
+There are several cloud providers available in the market
+
+		a) Amazon Webservices (AWS)
+		b) Microsoft Azure
+		c) Google Cloud (GCP)
+		d) Salesforce Cloud
+		e) Alibaba Cloud
+		f) IBM cloud etc....
+-> Cloud Services are divided into 3 types
+
+1) IAAS : Infrastructure as a service
+        2) PAAS : Platform as a service
+        3) SAAS : Software as a service
+-> IAAS means cloud provider will give infrastructure then we have to setup that infrastructure to run our application
+					
+-> PAAS means cloud provider will give platform run our application
+
+-> SAAS means cloud provider will give their application to use
+
+		Ex: google drive, dropbox, zoom, Salesforce etc...
+
+=============What is AWS?=============
+-> AWS stands for Amazon Webservices
+
+-> AWS is one of the leading cloud platform available in the market
+
+-> Amazon company managing this AWS cloud
+
+-> AWS cloud providing both IaaS & PaaS
+
+-> AWS cloud services are using in 190+ countries
+
+-> AWS providing 200+ services
+
+================AWS Services Overview===============
+
+1) EC2 : Elastic Compute Cloud (It is used to create virtual machines)
+
+2) EBS : Elastic Block Store (It is used to add additional memory to our virtual machines)
+
+3) ELB : Elastic Load Balancer (It is used to distribute load to multiple servers)
+
+4) S3 : Simple Storage Service (It is used to store unlimited data)
+
+5) RDS : Relational Database System (It is used to create SQL databases)
+
+6) Route 53 : DNS mapping (It is used to map application url to domain name)
+
+7) VPC : Virtual Private Cloud (It is used to create isolated network for our application in AWS)
+
+8) Elastic Beanstack : It is a PAAS in AWS. It will provide platform to run our application
+
+9) ECS : Elastic Contianer Service (It is used to run our docker containers)
+
+10) ECR : Elastic Container Registry (It is used to store our docker images)
+
+11) EKS : Elastic Kubernetes Service (It is used to run K8S cluster)
+
+12) IAM : Identity and Access Management (To manage permissions for our team members to use AWS services)
+
+13) AWS Lambdas : Lambds are used for serverless computing  ( Run the code without thinking about servers )
+
+14) EFS : Elastic File System ( To share files among multiple virtual machines)
+
+=========Linux Commands==============
+$ whoami : It will display currently logged in username
+
+$ pwd : present working directory
+
+$ date : To display current date
+
+$ cal : To display calendar
+
+
+-> In Linux everything  will be represented as a file
+
+-> We have 3 types of files in linux
+
+1) Ordinary File / Normal File  (it will start with -)
+2) Directory File  (it will start with d)
+3) Link File (it will start with l)
+
+============LINUX COMMANDS=============
+
+
+=> 'ls' is used to list out all files & directories available in the given directory
+
+Note: we can pass several options for 'ls' commands
+
+-> ls : It will display all files in alphabetical order (a to z)
+
+-> ls -r : It will display all files in reverse of alphabetical order(z to a)
+
+-> ls -l : It will display long listing of files
+
+-> ls -t : It will display all files based on last modified date and time. Most recent file will be display at top and old files will display at bottom.
+
+-> ls -rt : It will display all files based on reverse of last modified date and time. Old files will display at top and recent files will display bottom.
+
+
+-> ls -a : It will display all files including hidden files (hidden files will start with .)
+
+-> ls -li : It will display files with inode numbers.
+
+-> ls -lR : It will display all files and directories along with sub directoris content
+
+
+
+-> To display content of given directory we can execute like below
+               $ ls -l <dirname>
+
+-> To delete a file we will use 'rm' command
+               $ rm <filename>
+
+-> To delete empty directory we will use 'rmdir' command
+               $ rmdir <dirname>
+
+-> To delete non-empty directory we will use 'rm' command like below
+               $ rm -r dirname
+
+-> To display file content we will use 'cat' command
+               $ cat filename
+
+-> To display file content with line numbers we will use '-n' option
+               $ cat -n filename
+
+-> To display multiple files content at a time execute command like below
+               $ cat file1 file2 file3
+
+-> Copy one file data into another file using 'cat' command
+		$ cat f1.txt > f8.txt
+
+-> Copy more than one file data into another file
+               $ cat f1.txt f2.txt > f9.txt
+
+-> 'tac' command is used to reverse file content
+               $ tac filename
+
+-> 'rev' command is used to reverse each line content of the file 
+	        $ rev filename
+
+-> head command is used to display file data from top (default 10 lines)
+               $ head filename
+		$ head -n 5 data.log  (first 5 lines data)
+		$ head -n 20 data.log (first 20 lines data)
+
+-> tail command is used to display file data from bottom (default 10 lines)
+		$ tail filename (last 10 lines data)
+		$ tail -n 100 filename (last 100 lines data)
+	$ tail +25 filename (it will display data from 25th line to bottom)
+		
+
+Note: To see on-growing logs we can use '-f' option
+              $ tail -f data.log   (Live log message we can see)
+
+-> It is used to count no.of lines, no.of words and no.of characters in the file
+              $ wc f1.txt
+
+-> To copy the data from one file to another file
+	$ cp one.txt two.txt  ( or ) $ cat one.txt > two.txt
+        $ cp f1.txt f2.txt f3.txt  (invalid syntax)
+
+-> We can't copy morethan one file data using 'cp' command. To copy multiple files data we should go for 'cat' command
+        $ cat f1.txt f2.txt > f3.txt
+
+-> To rename files we will use 'mv' command
+	$ mv f1.txt f1111.txt
+        $ mv  dirname dirnewname
+
+Note: We can use 'mv' command for renaming and moving files
+
+-> To compare files we can use below commands
+
+$ cmp f1.txt f2.txt
+$ diff f1.txt f2.txt
+
+-> cmp command will display only first difference in given 2 two files
+-> diff command will display all the differences in the content
+
+
+-> 'grep' stands for global regular expression print.
+
+-> 'grep' command will process the text line by line and prints any lines which matches given pattern.
+
+	Ex: I want to print all lines which contains 'NullPointerException'
+        $ grep -i 'NullPointerException'  *
+
+==================File Permissions===============
+
+-> In Linux OS, file permissions are divided into 3 types
+
+		1) User Permissions
+		2) Group Permissions
+		3) Others Permissions
+
+-> File Permissions will be represented with below characters
+
+		r   - read
+		w  - write
+		x   - execute
+
+-> For Every file, permissions are divided into 3 sections
+
+		rwxrwxrwx
+
+-> First 3 characters will represent user permissions
+-> Next 3 characters will represent group permissions
+-> Last 3 characters will represent others permissions
+
+================Load Balancing=================
+
+-> The process of distributing load to multiple servers is called as Load Balancing
+
+-> Instead of running our application in one server, we will run on multiple servers
+
+-> We will setup Load Balancer to distribute load to multiple servers
+
+-> Create 2 Ec2-Instances
+-> Install Webserver (Httpd) in both servers and setup static website
+-> Start httpd server in both instances
+-> Enable Http port : 80 in security groups for both ec2-instances
+-> Create Load Balancer
+-> Scheme: Internet facing
+-> Target Group (collection of servers)
+-> Add both Ec2 instances for target group and select target group in LBR
+-> Add HTTP-80 port for LBR security group
+-> Access app using LBR DNS name
+
+============Apache Tomcat Folder Structure============
+
+
+bin : It contains commands to start and stop tomcat server
+
+conf : It contains configuration files
+
+lib : It contains libraries (jar files)
+
+logs : It contains server log files
+
+temp : Temp files will be created here (we can delete them)
+
+webapps : This is called as deployment folder (war file should be kept here to deploy)
+
+Note: We will keep war file in webapps folder for deployment
+
+
+============CODE COVERAGE============
+
+-> Code Coverage is the process of measuring how many lines of code is executed as part of Unit testing
+-> As per industry standard every project should have minimum 80% of coverage
+
+-> We can generate code coverage report using "Jacoco" plugin
+-> By seeing code coverage report we can identify which lines are executed in unit testing and which lines are not executed in unit testing
+
+-> By seeing code coverage report we can improve our unit test scenarios
+-> In project for few classes unit testing is not required then such classes or packages we can exclude from Code Coverage report using <exclude/> option
+
+
+-> To generate code coverage report add 'jacoco' plugin in pom.xml file
+-> Jacoco plugin is associated with Maven 'test' goal.
+-> When Maven 'test' goal is executed thean 'Jacoco' plugin will execute and it will generate the report.
+-> Jacoco Report Location :   <project-folder> / target / site / jacoco / index.html
+-> Open index.html in browser then we can see Jacoco report
+
+=====================concepts======================
+
+# Hibernate
+----------
+-> Hibernate is an ORM framework
+-> Hibernate Framework is developed on top of JDBC
+-> Hibernate framework providing few common logic to perform DB operations
+   (driver loading, connections, cpool, transcations, exceptions etcc)
+
+
+      Java App -----------> Hibernate --------> JDBC ----------> Database
+
+
+# Spring Framework
+-----------------
+-> Spring is an application development framework
+-> Using Spring we can develop applications with loosely coupling
+-> Standalone, web, distributed applications can be developed using Spring
+-> In Spring Framework we have to take of configurations
+
+# Spring Boot
+-----------
+-> Spring Boot is one approach to develop Spring Based applications
+-> The main advantage of Spring Boot is Auto-Configuration
+-> Spring Boot is trending in the market
+
+# REST APIs
+---------
+-> REST APIs are used to develop distributed applications
+-> If one application is communicating with another application then we will call it as distributed application
+-> Application Backeng logics are implementing using REST APIs
+
+# Microservices
+-------------
+-> Microservices is a design Pattern to develop applications with loosely coupled functionalities
+
+
+Note: Now a days we are using Spring Boot to develop Back End Rest APIs by following Microservices Design Pattern
+
+
+## Front End Technologies
+--------- -----------------
+HTML , CSS  , Boot Strap , Java Script ,  Angular or React JS
+
+
+# Java Fullstack Developer
+------------------------
+Backend Tech Stack : Core Java + Adv Java + Hibernate + Spring Boot + REST APIs + Microservices
+
+Front End Tech Stack : HTML + CSS + Boot Strap + Java Script + Angular or React JS
+
+Database : Oracle / MySQL/ PostgreSql / MongoDB
+
+Tools : Maven, Git Hub, Jenkins, Sonar Qube , JUnit, Jacocco, JMETER, Jenkins, Docker, K8S
+
+
+
+==============IMP CONCEPTS==============
+
+-> As part of project development we will use several tools
+
+1) Build Tools : Ant, Maven and Gradle
+
+		- Project Creation
+		- Dependencies/Jars downloading
+		- Project Compilation
+		- Execute Unit Test Cases
+		- Project Packaging (jar or war)
+
+2) Code Repository Tools : SVN, GIT Hub and BitBucket
+                                          - Code Integration at one place
+		- Monitored Access (who, when, why and what)
+
+3) Project Management Tool : JIRA
+                                         - Project work planning
+		- Work allocation to team members
+		- Work status tracking
+		- Bug Reporting
+
+4) Logging Tools : Log4J, Log4J2, Logback, Logstash & SLF4J
+                                         - To generate log messages of application
+		- Tracking Application execution details
+		- Tracking Exceptions Occured in application
+
+5) Log Monitoring Tools : Putty, WinScp and Splunk
+                                        - To see log messages of our application
+
+6) Code Review Tools : PMD and Sonar Qube
+                                     - To find developer mistakes in the code
+
+7) Unit Testing Tool : JUNIT with Mocking
+                                            - To test unit amount of work
+		 - Junit is used to automate unit testing
+		 - Mocking is used for isolated unit testing
+
+8) Code Coverage : Jacocco and Cobertura
+                                          - To identify how many lines executed in unit testing
+		 - It will provide lines executed and lines not executed
+		 - Code Coverage report will help to improve unit testing scenarios
+
+9) CI CD Deployment Tools : Jenkins   - To automate application deployment process  and  - Deployment Schedules
+10) API Testing tool : Postman and Swagger UI
+                                          - To test backend rest apis
+		 - Swagger can generate rest api documentation also
+
+11) Containerization Tool : Docker
+                                         - To generate application and its dependencies as one container
+
+12) Orchestration Tool : Kubernetes (K8S)
+                                         - To deploy docker containers on cluster
+
+13) Reports Generation : Apache POI (Excel) & IText API (PDF)
+                                            - Excel Report generation
+		   - Pdf report
+
+14) Message Queue : Apache Kafka
+                                             - To process stream of data
+
+15) Distributed Cache : Redis Cache
+                                              - Cache is used to reduce no.of db calls
+		   - Cache is used to improve performance of the application
+
+16) Performance Testing : JMETER and HP Load Runner
+		- To test application stability and responsiveness
+=> Along with coding we should have practical knowledge on above tools also
+
+========================================================================================================================================================================================================================================================================================================================
+
+TODAY:28032024
+
+-> We can send data from UI to controller in 3 ways
+1.Query params
+2.Path variables
+c.Form(Request forms)
+
+Query Parameters
+=================
+		
+Ex : https://www.youtube.com/watch?v=pGxvU9EZct8
+
+https://www.youtube.com/watch ==> This is URL
+
+Here 'v' is key & 'pGxvU9EZct8' is value  ===> Key value pair
+
+=> Query parameter represents data in key-value format
+=> Query Parameter will present only at end of the URL
+=> Query Parameter will start with '?'
+=> To use multiple query params we can use '&' as seperator
+
+Ex:  www.ashokitech.com/course?name=sbms&trainer=ashok
+
+=> To read query parameters from the URL we will use @RequestParam annotation
+
+* Query Params : To retrieve multiple records
+*Path Params : To retrieve unique record 
+
+Path Parameters
+===============
+
+-> Path Params are used to send data to server in URL
+-> Path Params will represent data directly (no key concept)
+-> Path Params can present anywhere in the URL
+-> Path Params should be represented in URL-Pattern using placeholder
+
+		Ex : /course/{name}/info
+
+Note: To read path params we will use @PathVariable annotation
+
+
+-----------------------C. Form Based Application Development
+----------------------------------------------------------
+
+-> Forms will play very important role in every web application
+
+    Ex: Login Form, Registration Form, Forgot Pwd Form, Search Form etc.
+
+-> Forms are used to collect data from the user and send it to server.
+
+-> To simplify forms development, Spring Web MVC provided 'form-tag-library'
+
+			      data binding
+		java obj <--------------------> form fileds
+
+-> Spring MVC 'form-tag-library' having several tags to develop form
+<form:form/>
+	<form:input/>
+	<form:password/>
+	<form:select/>
+	<form:option/> & <form:options/>
+	<form:radioButton/> & <form:radioButtons/>
+	<form:checkbox/> & <form:checkBoxes/>
+	<form:hidden/>
+	<form:error/>
+
+-> To bind java obj to form we will use 'modelAttribute' attribute
+-> To bind java obj variable to form field we will use 'path' attribute
+
+==============DB============
+
+# Working with Embedded Database :-
+
+-> Oracle, MySql, PostgreSQL these are external databases that means we have to download and install these databases in our machine. These databases are permanent database.
+
+-> Embedded database means it comes along with our application. If application is running then embedded database will run. If application stopped then embedded database also will stop. These databases are temporary databases. We don't need to download and install anything for using embedded database just add dependency in pom.xml file.
+
+			Ex: H2
+Note: Embedded databases are used for POC (Proof of concept).
+
+=============== Thymleaf ======================
+
+-> We used JSP as a presentation technology in our spring web mvc based applications
+
+
+-> JSP can't be executed in browser directly
+
+-> When the request comes to JSP then internally JSP will be converted to Servlet and that servlet will send response to browser
+
+-> When we use JSP for presentation then burden will be increased on server because every JSP should be converted into Servlet to produce the response.
+
+-----------------------------------------------------------------------------
+-> To overcome problems of JSP we can use Thymeleaf as a presentation technology
+
+-> Thymleaf is a (true)template engine that can be used in HTML pages directly
+
+-> HTML pages can be executed in browser directly (performance will be fast when compared with jsps)
+
+-> In general, HTML pages are used for static data. If we use thymleaf in HTML then we can add dynamic nature to HTML pages.
+
+-----------------------------------------------------------------------------
+
+-> We can develop spring boot application with thymleaf as a presentation technology
+
+-> To use Thymleaf in spring boot we have a starter
+                spring-boot-starter-thymleaf
+
+===================SPR IVQ============
+
+Videos:https://www.youtube.com/watch?v=1_SsosC4Cs8&list=PLpLBSl8eY8jSMr1hJLB096nq8W0ABQoXH
+
+
+=================controller to ui==================
+
+        @GetMapping("/greet")
+	public String displayGreetMsg(Model model) {
+		model.addAttribute("msg", "Hi, Good Morning....!!");
+		return "greetView"; //logical view name          }
+-> When controller method returns String value, DispatcherServlet will consider  that as logical view name.
+
+-> By using @ResonseBody annotation we can send response to user directly without view files
+
+
+Note : @Controller + @ResponseBody  = @RestController
+
+# Embedded Servers In Spring Boot :-
+-----------------------------------------------------------------------------
+-> To develop web or rest applications using spring boot we are using below starter
+       'spring-boot-starter-web'
+
+-> When we add this dependency, it is giving 'Apache Tomcat' as default embedded server
+-> We can change default Embedded Container from Tomcat to Jetty Like below
+
+		
+
+============#RestFul Services & Microservices=======================
+
+
+1) What are RESTFul Services ?
++++++++++++++++++++++++++++++++
+-> RESTFul Services are used to develop "Distributed Applications" with "Intereoperability"
+
+-> If one application is communicating with another application then we will call it as distributed application
+
+		Passport <----------> AADHAR App
+               MakeMyTrip <--------> IRCTC App
+
+-> Intereoperability means irrespective of the platform and language if applications are communicating then we will call them as Intereoperable applications.
+
+2) Why we should develop Distributed application?
+
+-> Distributed applications are used for Business to Business Communication ( B 2 B )
+-> We can reuse the functionality of one project in another project
+
+Ex:
+---
+-> IRCTC project contains logic to book train tickets
+-> MakeMyTrip application will communicate with IRCTC to book train ticket
+Note: In this scenario, MakeMyTrip application is re-using IRCTC application logic	
+
+		    HTTP
+		Provider App < --------------- > Consumer App
+
+
+-> Provider app and Consumer app will communicate using HTTP as Mediator
+
+-> In B2B communications, Consumer application will send request to Provider application with some data. Provider application will process that data and will send reponse to consumer.
+
+-> Consumer application and provider application can exchange the data in multiple formats
+
+		  txt/xml/json
+		Consumer App <--------------------> Provider App
+
+Q) What is Microservice?
++++++++++++++++++++++++++
+-> It is not a technology
+-> It is not a framework
+-> It is not an API
+
+-> Microservices is an architectural design pattern to develop the applications.
+
+-> In Microservies architecture we will divide project functionality into small small REST APIs
+
+-> XML & JAX-B
+	- Java Object to XML
+        - XML to Java Object
+-> JSON & JACKSON
+	- Java Object to JSON
+	- JSON to Java Object
+
+-> HTTP Protocol
+	- HTTP Request
+	- HTTP Response
+	- HTTP Methods
+	- HTTP Status Codes & messages
+
+-> REST API
+	- Provider
+	- Consumer
+
+
+
+-> In Microservies architecture we will divide project functionality into small small REST APIs
+
+
+
+===========JAX-B API==-============
+
+-> XML stands for Extensible Markup Language
+-> XML governed by W3C
+-> The initial version of xml is 1.0 & current version of xml is also 1.0
+-> XML will reprsent the data in elements
+
+	ex: <id>101</id>
+
+-> One element contains start tag and end tag
+-> Every xml will start with prolog
+	
+    <?xml version="1.0" encoding="UTF-8">
+
+-> Prolog represents processing instructions
+
+Note : Every XML should contain only one root element
+
+===================->
+ In the above xml we have 2 types of elements
+
+	1) Simple Element
+	2) Compound Element
+# What is Simple Element?
+Ans: The element which represents data directley is called as Simple Element
+
+Ex: <id>101</id>
+
+What is Compound Element?
+The Element which represents child elements is called as Compound Element.
+
+ <student>
+	<id>101</id>
+ </student>
+
+-> We can use attributes also in the xml
+
+ex: <book-name type="java">Spring</book-name>
+
+-> Attributes are used to provide supplement information for elements
+-> XML is intereoperable
+
+# What is intereoperability?
+---------------------------
+-> Language Independent + Platform Independent
+
+-> XML is the defacto standard to exchange data among applications in Webservices
+
+-> SOAP Web services will support only xml format for exchanging data
+
+-> RESTful services supports for xml and some other formats also like json.
+
+# JAX-B:-
+---------
+-> JAX-B stands for Java Architecture For XML Binding
+
+-> Using JAX-B we can convert java object into xml and xml into java object
+
+Using JAX-B api we will perform mainly 2 operations
+----------------------------------------------------
+1) One Time operation
+2) Runtime operations
+
+# What is Onetime operations?
+--------------------------------
+-> Onetime Operation means designing binding classes
+
+-> Binding class will represent structure of the xml file
+
+-> The java class which represents structure of the xml is called as Binding class
+
+Note: We will create Binding class only one time
+
+# What are Runtime Operations?
+-------------------------------
+-> Marshalling & Un-Marshalling are called as Runtime operations.
+-> The process of converting java object into xml is called as Marshalling
+-> The process of converting xml into java object is called as Un-Marshalling
+
+Note: These operations will happen when the application is running
+
+Note: To perform Runtime operations Binding classes are mandatory.
+
+# Working with JAX-B :-
+----------------------
+-> JAX-B api & its implementations are part of JDK only (directly we can use it)
+
+-> From Java 11 onwards JAX-B removed from JDK, we have to add JAX-B dependency in pom.xml
+
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+
+============JAX-B ANNOTATION========
+@Data
+@XmlRootElement(name = "student")
+public class Student {}
+
+
+==========================( JACKSON )================
+
+-> JSON stands for Java Script Object Notation
+
+-> JSON format is universal format to exchange data over a network
+
+-> JSON is intereoperable (Platform Indepedent & Language Independent)
+
+-> When we compare JSON with XML, JSON is light weight
+   (it occupies less memory)
+
+-> JSON will represent the data in Key-Value Pair Format
+
+-> In Java we don't have direct support to work with JSON data
+
+-> We have third party apis to work with JSON data in java applications
+
+		1) Jackson API
+		2) Gson API
+
+-> Using above third party apis we can convert Java Object to Json and Json to Java Object
+
+-> Converting Java Object into JSON data is called as Serialization
+
+-> Converting JSON data to Java Object is called as De-Serialization
+
+
+		JSON data <------------------> Java Object
+-> Normal POJO classes we can use to perform Serialization and De-Serialization with JACKSON api
+
+
+================
+
+jackson api having objectMaper class  writeValue(File f,Object o) --->to convert java obj to json
+                                      readValue(File f, Class t)---> to convert json to java obj
+
+
+jax-b api (to work with xml data in java applications)
+jackson api (to work with json data in java applications)
+
+===========# HTTP Protocol :-==========
+
+-> Hyper Text Transfer Protocol
+-> Http acts as a mediator between client & server
+
+			                  HTTP 
+			client  <----------------------> server
+
+-> Client will send Http Request to server
+-> Server will process the request and will send Http Response to client
+-> Http is stateless protocol
+-> Stateless means it can't remember the conversation happend between Client & Server
+
+
+# HTTP Methods
+----------------
+GET : It is used to get response from the server
+
+POST : It is used to send data to server (creation purpose)
+
+PUT : It is used to update record at server
+DELETE : It is used to delete the record at server
+
+Note: When we are developing rest api methods, we have to bind our methods to HTTP protocol methods based on method logic.
+
+-> Every REST API method should be binded to Http Protocol Method (It is mandatory)
+
+GET ---> @GetMapping
+POST ---> @PostMapping
+PUT ---> @PutMapping
+DELETE ---> @DeleteMapping
+
+# Client will send request to server with below details :-
+----------------------------------------------------------
+Request Header (It contains meta data)
+Request Body (It contains payload (business data)
+
+#Server will send response to client with below details :-
+---------------------------------------------------------
+Response Header (It contains meta data)
+Response Body (It contains payload (business data))
+
+
+# HTTP Status Codes :-
+----------------------
+Note: Response Header will contains HTTP Status Code
+
+-> Http Status Code will represent how that request got processed
+
+1xx  - INFORMATIONAL
+
+2xx  - OK (Success)
+
+3xx  - Redirectional (www.sunmicrosystem.com -> www.oracle.com)
+
+4xx  - Client Error
+
+5xx  - Server Error
+
+
+Note: Http Status Codes will play very important in distributed applications development
+
+Note: POST, PUT and DELETE Methods having request body. GET method don't have request body.
+
+-> Request Body is used to send data to server
+
+-> GET request is meant for getting data from server. It is not for sending that's why no Body for GET Request
+
+
+Note: In GET request we can send data to server in URL using Query Params & Path Params
+
+	        Ex: www.ashokitech.com/course?name=sbms  (Query Param)
+               Ex : www.ashokitech.com/comurse/sbms	(Path Param)
+
+-> ResponseEntity is a predefined class available in Spring Web MVC
+
+-> Using ResponseEntity class we can construct Response with body and status code
+
+		new ResponseEntity<>(body, HttpStatus);
+
+-----------------------------------------------------------------------------
+Note: REST API Methods should have Unique URL Patterns otherwise we will get ambiguity probelm
+ We need to make sure our methods should be identified uniquely
+
+@RestController
+@GetMapping
+ResponseEntity
+
+-> @RestController annotation is used to represent our class as distributed component
+
+	@Controller + @ResponseBody = @RestController
+
+Note: @RestController class methods will return response directly
+
+		 (text / xml / json)
+
+Note: No concept of returning "view file names" in RestController
+
+
+-> @GetMapping annotation is used to bind RestController method to HTTP GET Req.             Ex: @GetMapping("/")
+
+-> ResponseEntity class is used to construct response to client
+                 new ResponseEntity<>(body, httpstatus);
+
+# Query Params :-
+----------------
+-> Query Params represents data in key value format
+-> Query Params should present only at end of the URL
+-> Query Params will start with '?'
+-> If we want to send more than one query param in URL then they should be seperated by using '&'
+
+	Ex: www.ashokitech.com/course?name=sbms&trainer=ashok
+
+-> To read query parameters we will use @RequestParam("key") annotation
+
+Note: In JAX-RS api we have @QueryParam annotation to deal with Query Params.
+Now a days we are not using JAX-RS directly to develop REST APIs because our Spring MVC having support to develop REST APIs
+-----------------------------------------------------------------------------
+# Path Parameters:-
+---------------------
+-> Path Parameters also used to send data to server in URL
+-> Path Parameters will represent data directly in URL (No keys)
+-> Path Parameters can present anywhere in the URL
+-> To send multiple path parameters we will use '/' as separator
+
+Note: Path Parameters should be represented in URL Pattern (mandatory)
+
+			Ex-1 : /ticket/{pnr}
+			Ex-2 : www.ashokitech.com/{course}/info
+
+			Ex-3 : www.ashoitech.com/course/sbms/ashok/info
+					("/course/{name}/{trainer}/info)
+
+-> To read Path Params from URL, we will use @PathVariable annotation
+
+-> In Web applications we will use QueryParams to send data to server in URL
+
+-> In Distributed applications we will use Path Params to send data to server in URL
+
+# Dealing with XML and JSON data in GET Request For Produces :-
+-------------------------------------------------------------------
+-> XML represents data in tags format
+-> JSON represents data in key-value format
+-> XML & JSON both are intereoperable
+
+Note: Now a days JSON is widely using in distributed applications
+
+Note: In Spring Boot, we no need to write JAX-B and Jackson logics directly because Spring Boot will take care of that. 
+Note: Spring Boot internally uses HttpMessageConverters to deal with XML and JSON 
+
+Note-1 : In @GetMapping annotation, "produces" attribute represents in which formats our REST API method can provide response to clients
+
+Note-2 : Client will send request with "Accept" header.
+
+		 Ex :  Accept = "application/json"
+
+-> Based on "Accept" header REST API will send response to client in that format. Internally "HTTP Msg Converters" will be used to convert the object data into client understandable format.
+
+Q) Do we need to write the logic of JAX-B and JACKSON in REST Controller to convert data into xml or json ?
+Ans) As a programmer we no need to that because REST API will use Message Converters internally to those conversions. Because conversions are universal requirement hence Spring Web MVC providing that logic for everybody.
+
+========# produces & Accept#
+
+=> "produces" attribute represents in which formats REST API method can provide response
+
+=> "Accept" header represents in which format client expecting response from REST API
+3in request body :-
+
+-> Client application can send data to REST API in 2 ways
+                       1) In URL
+			2) In Request Body
+
+-> To send data in URL we will use Query Params & Path Params. Data will be displayed in URL so not recommended to send sensitive data.
+-> To send sensitive data and huge amount of data clients will use Request Body
+
+=> "consumes" represents in which formats REST API method can take input data
+
+=> "Content-Type" header represents in which format client sending data in Request Body.
+
+Note: Based on Content-Type header value, Message Converter will use JAX-B or JACKSON api internally to convert raw data into Object format
+
+Content-Type = application/json ==> Jackson api will be used to read json data from body
+Content-Type = application/xml ==> JAX-B api will be used to read xml data from body
+
+produces
+Accept
+
+consumes
+Content-Type
+
+-> "produces" represents REST API method supporting output formats
+-> "consumes" represents REST API method supporting input formats
+
+-> "Content-Type" header represents client sending data format in request body
+-> "Accept" header represents client expecting data format in response body
+
+=========================# Heroku Cloud Deployment :-===================
+
+-> We have developed REST API and it is running in local machine
+-> If we want everybody to access our REST API then we should host our application in Cloud
+-> Heroku is one of the Cloud Platform provided by Salesforce company
+-> Heroku cloud is giving platform as a service (PaaS)
+-> PaaS means we need to provide our source code then Cloud Provider will give the Platform to run our code (Platform means environment)
+-> Heroku cloud is free to host our applications
+-> In Heroku cloud we can deploy upto 5 applications
+-> We can deploy application into heorku in 2 ways
+
+			1) Heroku CLI
+	               2) From Git Hub Repository
+
+-> When we push our code to Heroku, it is identifying our code is developed by using which language and it is preparing environment based on that to run our application. 
+Hence it is called as Platform As A Service (PaaS)
+
+Note: If your application using database then we have to create database also in cloud platform
+
+Note: H2 database we can use for practise purpose
+
+---------------------------------------------------------
+
+#Client side api development introduction through diagram only 
+-> Rest API will provide services to other applications
+-> @RestController is used to develop REST API
+-> REST Controller methods should be binded to HTTP methods
+-> REST Controller methods supports multiple data formats (i/o)
+-> REST Controller methods should have unique URL pattern
+-> RestController will use JAX-B api to deal with XML data
+-> RestController will use JACKSON api to deal with JSON data
+-> RestController will use Message Converters to convert data
+-> GET req is used to get data from REST API (Path & Query Parms)
+-> POST req is used to send data  ( Request Body )
+-> PUT req is used to update the data 
+-> DELETE req is used to delete the data
+-> PostMan is used to test REST API functionality
+-> Swagger is used to generate REST API Documentation
+-> Swagger UI to test rest api with user interface
+-> Heroku Cloud  providing PaaS to host apps in public cloud
+
+
+---------------REST CLIENT-----------------------
+
+
+-> The application which is accessing REST API is called as REST CLIENT.
+
+-> In Spring Boot we can develop REST Client in 2 ways
+
+		1) RestTemplate (Synchronus client) - Outdated
+
+		2) WebClient ( Sync + Async client ) - Trending
+
+-> RestTemplate is a predefined class, it is part of "spring-boot-starter-web" dependency
+
+-> WebClient is a interface, it is part of "spring-boot-starter-webflux" dependency
+
+Note: WebClient introduced in Spring 5.x version
+
+==================================# Exception Handling :-================
+
+-> Exception means an unexpected and unwanted situation occuring the program execution is called as Exception
+
+-> When exception occurs programs will be terminated abnormally (stops in the middle)
+
+-> As a developer we need to handle that exception and terminate the program gracefully
+
+-> To handle exceptions in the java program we have below 5 key words
+
+1) try
+2) catch
+3) throw
+4) throws
+5) final
+
+-> The risky code we will keep in try block
+-> catch block is used to handle exception 
+(when exception occured in try block, execution control comes to catch block)
+
+-> throw keyword is used to re-throw the exception
+
+-> throws keyword is used to ignore the exception
+
+-> final block is used to write clean up activities (closing files, closing connections etc)
+
+
+# Combinations of keywords :- 
+++++++++++++++++++++++++++++
+try with catch
+try with catch & final
+try with final
+Note: When we write try block then catch or final at least one block is mandatory. We can write both also (catch & final with try)
+
+------------------------------# Exception Handling in REST API  :-------------------------
+
+-> In REST API we can handle exceptions in 2 ways
+
+	 1) Controller Based Handling
+         2) Global Exception Handling
+
+-> Controller Based Handling means writing Exception Handler methods in controller class. That exception handler works only for that controller class exception.
+
+-> To handle exceptions of any class in the project then we will go for Global Exception Handling
+
+-> To implement Global Exception Handling we will use '@RestControllerAdvice' annotation
+
+-> To bind handle method to exception we will use '@ExceptionHandler' annotation
+
+--------------------# Microservices  :-----------------------------
+
+What is Monolith Architecture
+-----------------------------
+-> If we develop all the functionalities in single project then it is called as Monolith architecture based application
+
+-> We will package our application as a jar/war to deploy into server
+
+-> As monolith application contains all functionalities, it will become fat jar/war
+
+Advantages
+----------
+1) Simple to develop
+
+2) Everything is available at once place
+
+3) Configuration required only once
+
+Dis-Advantages
+--------------
+1) Difficult to maintain
+
+2) Dependencies among the functionalites
+
+3) Single Point Of Failure
+
+4) Entire Project Deployment
+
+****** To overcome the problems of Monolith, Microservices architecture came into market******
+
+-> Microservices is not a programming language
+
+-> Microservices is not a framework
+
+-> Microservices is not an Specification API
+
+-> Microservices is an architectural design pattern
+
+-> Microservices suggesting to develop application functionalities with loosely coupling
+
+-> In Microservices architecture we don't develop all the functionalities in single project. We will divide project functionalities into several REST APIs
+
+Note: One REST API is called as one Microservice
+
+-> Microservices architecture based project means collection of REST APIs.
+
+-> Microservices is not related to only java. Any programming language specific project can use Microservices Architecture.
+
+Advantages
+----------
+
+1) Loosely Coupling
+
+2) Easy To maintain
+
+3) Faster Development
+
+4) Quick Deployment
+
+5) Faster Releases
+
+6) Less Downtime
+
+7) Technology Independence
+
+
+Dis-Advantages
+--------------
+
+1) Bounded Context
+
+2) Lot of configurations
+
+3) Visibility
+
+4) Pack of cards
+Microservices Architecture
+
+-> We don't have any fixed architecture for Microservices
+
+-> People are customizing microservices architecture according to their requirement
+
+-> Most of the projects will use below components in Microservices Architecture
+
+
+1) Service Registry (Eureka Server)
+
+2) Services (REST APIs)
+
+3) Interservice Communication (FeginClient)
+
+4) API Gateway (Zuul Proxy)
+
+
+Service Registry
+++++++++++++++++
+-> Service Registry acts as DB of services available in the project
+-> It provides the details of all the services which are registered with Service Registry
+-> We can identify how many services available in the project
+-> We can identify how many instances available for each service
+-> We can use "Eureka Server" as service registry
+-> Eureka Server provided by "Spring Cloud Netflix" library
+
+Services
++++++++++
+-> Services means REST APIs / Microservices
+-> Services contains backend business logic
+-> In the project, some services will interact with DB
+-> In the project, some services will interact with third party REST API ( external communication )
+-> In the project, some services will interact with another services with in the project
+   ( inter-service communication )
+-> For inter-service communication we will use feign-client
+-> To distribute the load, we can run one service with Multiple Instances (Load Balancing)
+
+
+
+
+Note: We will register every service with Service Registry
+
+API Gateway
++++++++++++
+-> API Gateway is used to manage our backend apis of the project
+-> API Gateway acts as mediator between end users and backend apis
+-> API Gateway can filter logic to decide request processing
+-> API Gateway will contain Routing logic (which request should go to which REST API)
+-> API Gateway also will be registered with Service Registry
+
+
+------------------API Gateway------------------
+
+-> API Gateway will act as mediator between client requests & backend apis
+
+-> API Gateway will provide single entrypoint to access our backend apis
+
+-> In Api Gateway we will write mainley below 2 types of logics
+
+			1) Filters
+
+			2) Routing
+
+-> Filters are used to execute some logic before request processing and after request processing
+
+-> Routing is used to tell which request should go to which REST API
+
+-> In Spring Cloud we have 2 options to create API Gateway
+
+				1) Zuul Proxy (old approach)
+				2) Cloud Gateway (latest approach)
+
+
+Note: Zuul Proxy is not supported by latest versions of spring boot
+
+# Working with Zuul proxy :-
+++++++++++++++++++++++++++++++
+
+-> create spring-boot application with below dependencies
+
+1) Change Spring-boot-starter-parent version to 2.2.2.RELEASE
+2) Change Cloud Version to Hoxton.SR1
+3) Add zuul dependency
+4) Add eureka-client dependency
+
+<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
+
+-> Configure below 2 annotations in spring boot start class
+
+@EnableZuulProxy
+@EnableDiscoveryClient
+# Working with Zuul proxy :-
+++++++++++++++++++++++++++++++
+
+-> create spring-boot application with below dependencies
+
+1) Change Spring-boot-starter-parent version to 2.2.2.RELEASE
+2) Change Cloud Version to Hoxton.SR1
+3) Add zuul dependency
+4) Add eureka-client dependency
+
+<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
+
+-> Configure below 2 annotations in spring boot start class
+
+@EnableZuulProxy
+@EnableDiscoveryClient
+
+# Working with Zuul proxy :-
+++++++++++++++++++++++++++++++
+
+-> create spring-boot application with below dependencies
+
+1) Change Spring-boot-starter-parent version to 2.2.2.RELEASE
+2) Change Cloud Version to Hoxton.SR1
+3) Add zuul dependency
+4) Add eureka-client dependency
+
+<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
+
+-> Configure below 2 annotations in spring boot start class
+
+@EnableZuulProxy
+@EnableDiscoveryClient
+-> We are running Service Registry project with Eureka Server on 8761 port number
+
+-> Eureka Discovery Client applications are auto-registering with Eureka Server when port is 8761
+
+-> If we change Eureka Server port number then we have to register Eureka Client application with Eureka Server using below property in application.yml file
+
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:9090/eureka
+
+Note: We should configure this property in eureka client application yml file
+
+
+{I added this also bcos geeting error on console related to 
+Description:
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway.
+Action:
+Please set spring.main.web-application-type=reactive or remove spring-boot-starter-web dependency. so
+ spring:
+   main:
+    web-application-type: reactive
+
+Apg is paid software gateway (google gateway/ commercial gateway )
+Spring cloud is open source gateway 
+
+
+In API gateway we will mainley 3 types of logics
+
+1) Route
+2) Predicate
+3) Filters
+
+-> Routing is used to defined which request should be processed by which REST API in backend. Routes will be configured using Predicate
+
+-> Predicate : This is a Java 8 Function Predicate. The input type is a Spring Framework ServerWebExchange. This lets you match on anything from the HTTP request, such as headers or parameters.
+
+-> Filters are used to manipulate incoming request and outgoing response of our application
+
+Note: Using Filters we can implement security also for our application.
+
+If we send request from postman then in console it will show postman token . postman will generate one token . if we send request from browser then no token will be generated in console so we can identity by this way request is coming from browser and postman.
+Postman will send one token in header.
+
+Interview ques: how rest api will understand this request came from browser or Postman ?
+
+-> We can validate client given token in the request using Filter for security purpose
+
+-> We can write request and response tracking logic in Filter
+
+-> Filters are used to manipulate request & response of our application
+
+-> Any cross-cutting logics like security, logging, monitoring can be implemented using Filters
+
+#Spring Boot Admin Server and Admin Client
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-> Admin server will provide user interface to monitor and manage all the apis actuator endpoints
+
+-> The REST APIs of our application should register with admin server (It is called as Admin client)
+
+
+Note: Using this approach we can monitor all the apis at one place
+
+Note : when you both clients are registered on admin server , to get actuator of Client we do not have to click on url, you to click on white space near the url then only it will show actuators endpoints .....
+
+Interview question: can we change application logging level without restarting the project ?
+If we have admin server then without restarting the serve/application we can change application logging
+
+# Working with Mono & Flux Objects :-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-> Mono & Flux objects are used to achieve reactive programming
+
+-> Reacting Programming means Non-Blocking execution based on events
+
+-> In Spring 5.x version Reactive Programming got introduced
+
+-> To work with reactive programming Spring Boot provided below starter
+
+			'spring-boot-starter-webflux'
+
+-> Mono object represents single response
+
+-> Flux object represents stream of responses
+
+# Circuit Breaker :-
+-----------------------------------------------------------------------------
+-> Circuit Breaker is a design pattern in Microservices
+
+-> Circuit Breaker is used to implement fault-tolerance systems
+
+-> Fault-tolerance systems are also called as resillence systems
+
+-> Fault-tolerance system means when main logic is failed to execute then we should execute fallback logic to process client request
+
+# Usecase  :-
++++++++++++++
+get data from redis
+
+if redis logic is failing then we should get data from db
+
+Note: If redis logic is failing for 3 requests contineously then execute db logic for 30 mins. After 30 mins re-try for redis logic execution if it is working then execute redis logic only. If 3 re-try executions failed with reds then execute db logic for next 30 mins.
+
+
+-> To implement circuit-breaker we should add below dependency in pom.xml file
+
+
+# Sleuth & Zipkin :-
+-----------------------------------------------------------------------------
+
+-> Microservices application means several REST APIs will be available
+
+-> As part of application execution one Rest API can communicate another REST API
+-> When we send request from UI, it will process by Multiple REST APIs with Interservice communication
+
+*** How we can understand which rest api is taking more time to process request ? ***
+
+-> If we add Sleuth dependency in REST API then it will add span-id and trace-id for log messages
+
+-> For every request once span-id will be generated by Sleuth
+
+-> If one request is processing multiple REST API then Sleuth will use same span-id for REST APIs to generate log message
+
+-> Trace-id is specific to one REST API
+
+-> By using span-id and trace-id we can understand which REST api has taken more time process request
+
+-> To monitor span-id and trace-id details we will use ZipKin server
+
+-> Zipkin server is providing user interface (UI) to monitor all the details
+
+Note: The REST APIs which are having sleuth dependency should register with Zipkin server
+
+
+Note: By using Sleuth and Zipkin we achieve Distributed Log Tracing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

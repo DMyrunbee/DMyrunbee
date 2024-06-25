@@ -1,0 +1,270 @@
+====Agile-JIRA workshop =====
+https://www.youtube.com/watch?v=TUbriIbmJo0&t=1s
+
+===== JIRA workshop ========================
+https://www.youtube.com/watch?v=K-_kxisTKG0
+
+
+=====>Internview Video====
+https://youtu.be/V-DpTeo0HUk this is ur video
+
+
+=============== Resume preparation &  interview tips ==============
+https://www.youtube.com/watch?v=mLrsZj088I0&t=1s
+https://www.youtube.com/watch?v=F4F4aWi_w
+
+====Code Coverage tool =====
+JaCoCo (Java Code Coverage) | by Mr. Nataraj
+https://youtu.be/wc0eN73-2tM
+
+
+== Debugging  in Eclipse IDE========
+https://youtu.be/8KI0GfoWTwQ
+https://youtu.be/z8317PyEM-k
+
+===== lombok api==================
+https://www.youtube.com/watch?v=4hlnLkwgxig&list=RDCMUC4o8Fdpv3g_AjgShAeivqpA&index=1
+https://www.youtube.com/watch?v=e1_9uPJ31Lw&list=RDCMUC4o8Fdpv3g_AjgShAeivqpA&index=2
+
+
+===Tools used in Modern Build and Deployment | by Mr. Nataraj ====
+https://youtu.be/5oemIoT3KEc
+
+===java Annotaions Fundamentals=============
+https://www.youtube.com/watch?v=2t22AjtbyEY&t=25s
+https://www.youtube.com/watch?v=-bGWDg91vR4&t=41s
+
+============Generics=========
+https://www.youtube.com/watch?v=Wb3HSRj1PAY
+
+========Reflection API======
+https://www.youtube.com/watch?v=eIFmT_d_OYE&t=198s
+
+======Java Beans=======
+https://www.youtube.com/watch?v=io2TciOcF2Y
+https://www.youtube.com/watch?v=GOvak6awDrl&t=161s
+
+========Junit5,HttpUnit&Mockito========
+https://www.youtube.com/watch?v=6VVplfYp40M
+https://www.youtube.com/watch?v=AI3FY2iD0
+https://www.youtube.com/watch?v=7Xq40Q7aPE
+
+=======Spring tx mgmt =======
+https://youtu.be/tn7oXoXAKfI
+https://youtu.be/68R_a2lmlii
+https://youtu.be/nD_86olXt1I
+https://youtu.be/5MNnR-EnJ6A
+https://youtu.be/fePDtdnuQe0
+https://youtu.be/e5chgAoS6pc
+https://youtu.be/nMfEM1wTULg
+https://youtu.be/dg9aXbc2MKk
+
+====Agile-JIRA workshop =====
+https://www.youtube.com/watch?v=TUbriIbmJo0&t=1s
+
+===== JIRA workshop ========================
+https://www.youtube.com/watch?v=K-_kxisTKG0
+
+
+=====>Internview Video====
+https://youtu.be/V-DpTeo0HUk this is ur video
+
+
+=============== Resume preparation &  interview tips ==============
+https://www.youtube.com/watch?v=mLrsZj088I0&t=1s
+https://www.youtube.com/watch?v=F4F4aWi_w
+
+====Code Coverage tool =====
+JaCoCo (Java Code Coverage) | by Mr. Nataraj
+https://youtu.be/wc0eN73-2tM
+
+
+== Debugging  in Eclipse IDE========
+https://youtu.be/8KI0GfoWTwQ
+https://youtu.be/z8317PyEM-k
+
+===== lombok api==================
+https://www.youtube.com/watch?v=4hlnLkwgxig&list=RDCMUC4o8Fdpv3g_AjgShAeivqpA&index=1
+https://www.youtube.com/watch?v=e1_9uPJ31Lw&list=RDCMUC4o8Fdpv3g_AjgShAeivqpA&index=2
+
+
+===Tools used in Modern Build and Deployment | by Mr. Nataraj ====
+https://youtu.be/5oemIoT3KEc
+
+https://youtu.be/-yH5cwcWjaA
+https://youtu.be/8xxv4u-co2A
+https://youtu.be/gdc_ICB7vE8
+https://youtu.be/cgZ_tus_g8k
+https://youtu.be/KwRjaI-EZeU
+
+=====Maven Video    =========
+https://www.youtube.com/watch?v=2ZWK87ws2tM
+https://www.youtube.com/watch?v=g8tyXC0fCd8
+
+-----------SPRING JDBC VIDEOS-----------
+https://youtu.be/4ccrm2cw7yw
+https://youtu.be/ZLCtgHyl5ug
+https://youtu.be/4j1Tw518YSA
+https://youtu.be/ko2gvNZxhEc
+https://youtu.be/n6E40xBGyZM
+https://youtu.be/HtXBV4-7Mis
+https://youtu.be/qwouM75mJWQ
+https://youtu.be/mWnicgnu9cE
+https://youtu.be/A1R3Vmm5KVQ
+https://youtu.be/xV4wfx85ZuQ
+https://youtu.be/AKObOoiXtGc
+https://youtu.be/9aExLuLkVKo
+https://youtu.be/iyHrP0mn8co
+https://youtu.be/UY-OOJL8XuY
+
+------------Mode1,MVC1,MVC2 Vedios------------
+https://www.youtube.com/watch?v=s07-b1tdtkU
+https://www.youtube.com/watch?v=HeA8AGNLjPw&t=18s
+https://www.youtube.com/watch?v=_kKEjRUqVqs
+https://www.youtube.com/watch?v=s07-b1tdtkU
+https://www.youtube.com/watch?v=s07-b1tdtkU&t=17s
+https://www.youtube.com/watch?v=TiTJ9V1PHR4&t=2s
+
+--------------Language vs Technology vs FrameWork-----------
+https://www.youtube.com/watch?v=Bw3v1b3WjDM&t=604s
+https://www.youtube.com/watch?v=aXSLLXjkf4U&t=833s
+https://www.youtube.com/watch?v=bKi_cNUh-8w
+
+----------IT industry--------
+https://www.youtube.com/watch?v=H2rR5ZMLXcU&t=5s
+
+---------Dynamic Servlet Registration---------------
+https://www.youtube.com/watch?v=aRscgj17HuI
+
+---------All Sub Links- BySuneel--------------------
+ https://jobs4times.com/
+
+
+=========================================================================================================================
+
+
+
+=== tools used in modren development,  build process ======
+https://www.youtube.com/watch?v=5oemIoT3KEc
+
+=== Debugging  in Eclipse IDE========
+https://youtu.be/8KI0GfoWTwQ
+https://youtu.be/z8317PyEM-k
+
+=========== Log4j  vedios ===============
+https://www.youtube.com/watch?v=RBxHHV_7Q0cd
+https://www.youtube.com/watch?v=uKsKwFpRkgg
+
+====Junit5, HttpUnit & Mockito===
+                  https://www.youtube.com/watch?v=6VVplfYp40M
+	https://www.youtube.com/watch?v=AI3b3FY2iD0
+	https://www.youtube.com/watch?v=7Xq4j0Q7aPE
+
+	====Agile-JIRA workshop =====
+https://www.youtube.com/watch?v=TUbriIbmJo0&t=1s
+
+===== JIRA workshop ========================
+https://www.youtube.com/watch?v=K-_kxisTKG0
+
+
+====resume preparation and interview tips====
+https://www.youtube.com/watch?v=mLrsZj088I0
+
+====> do u know IT industry ==========
+https://www.youtube.com/watch?v=H2rR5ZMLXcU&t=5s
+
+=============maven videos============
+https://www.youtube.com/watch?v=2ZWK87ws2tM
+https://www.youtube.com/watch?v=g8tyXC0fCd8&t=399s
+https://www.youtube.com/watch?v=S35fTmW9moc&t=11s
+https://www.youtube.com/watch?v=OpIE9qRhXl8&t=14s
+https://www.youtube.com/watch?v=WccmV8_MeC8&t=20s
+
+====Gradle vedios==================
+https://www.youtube.com/watch?v=5JkqrUu4kGM&t=75s
+https://www.youtube.com/watch?v=CfATtI9_nMA
+https://www.youtube.com/watch?v=A12Z8LjJEMo
+https://www.youtube.com/watch?v=jTJwieViWQQ&t=7074s
+
+
+===== language vs  technology  vs   framework======
+https://www.youtube.com/watch?v=Bw3v1b3WjDM&t=604s
+https://www.youtube.com/watch?v=aXSllXjkf4U&t=833s
+https://www.youtube.com/watch?v=bKi_cNUh-8w
+
+
+
+==============JAva Bean vedios =============
+https://www.youtube.com/watch?v=io2TciOcF2Y
+https://www.youtube.com/watch?v=GOvak6awDrI&t=161s
+
+
+===== lombok api==================
+https://www.youtube.com/watch?v=4hlnLkwgxig&list=RDCMUC4o8Fdpv3g_AjgShAeivqpA&index=1
+https://www.youtube.com/watch?v=e1_9uPJ31Lw&list=RDCMUC4o8Fdpv3g_AjgShAeivqpA&index=2
+
+===== Git Tutorial=================================
+https://www.youtube.com/watch?v=_frCuw5JWdQ&list=PLVlQHNRLflP-C43xWt10PB3gKC8DDPB12
+
+
+=============== Resume preparation &  interview tips ==============
+https://www.youtube.com/watch?v=mLrsZj088I0&t=1s
+https://www.youtube.com/watch?v=F4F4aWi_w
+
+
+====Code Coverage tool =====
+JaCoCo (Java Code Coverage) | by Mr. Nataraj
+https://youtu.be/wc0eN73-2tM
+
+
+DevSecOps Tools @ 9.00 AM (IST) by Mr. Nataraj
+Day-1 https://youtu.be/RMbj65ZP7tk
+Day-2 https://youtu.be/DcAZOdvgRJs
+Day-3 https://youtu.be/VEYxo7gQypg
+Day-4 https://youtu.be/0Jj7M72xTlg
+Day-5 https://youtu.be/92XVNFZFsSM
+Day-6 https://youtu.be/IzuEOgOo1hw
+Day-7 https://youtu.be/Xw3Hab27vDI
+
+==========Spring JDBC Videos============13
+https://youtu.be/4ccrm2cw7yw
+https://youtu.be/ZLCtgHyl5ug
+https://youtu.be/4J1Tw518YSA
+https://youtu.be/ko2gvNZxhEc
+https://youtu.be/n6E40xBGyZM
+https://youtu.be/HtXBV4-7MIs
+https://youtu.be/qwouM75mJWQ
+https://youtu.be/mWnIcgnu9cE
+https://youtu.be/A1R3Vmm5KVQ
+https://youtu.be/xV4wfz85ZuQ
+https://youtu.be/9aExLuLkVKo
+https://youtu.be/iyHrP0mn8co
+https://youtu.be/UY-OOJL8XuY
+
+========Spring TX Mgmt videos============13
+https://youtu.be/tn7oXoXAKfi
+https://youtu.be/68R_a2lmLII
+https://youtu.be/nD_86oLXt1I
+https://youtu.be/5MNnR-EnJ6A
+https://youtu.be/fePDtdnuQe0
+https://youtu.be/e5chgAoS6pc
+https://youtu.be/nMfEM1wTULg
+https://youtu.be/dg9aXbc2Mkk
+https://youtu.be/-yH5cwcWjaA
+https://youtu.be/8xxv4u-co2A
+https://youtu.be/gdc_lCB7vE8
+https://youtu.be/cgZ-tus-g8k
+https://youtu.be/KwRjai-EZeU
+
+=====servlet url patteern==========
+https://www.youtube.com/watch?v=opQ5kqJgKE4
+https://www.youtube.com/watch?v=HXkvyuc3YWE
+https://www.youtube.com/watch?v=W3u8i23oL8o
+
+
+===
+
+===================
+Watch Eclipse Shortcuts Video : https://youtu.be/TvYMey5SYa8
+Watch Eclipse Code Debugging Video : https://youtu.be/2WxsClYhreE
+

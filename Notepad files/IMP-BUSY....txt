@@ -1,0 +1,129 @@
+what are the checks you did before deploying Application?
+How should you secured your apis?
+Whats are the checks you did if you get late response from your aplication?
+how change server from tomcat to another?
+What is authentication?
+What is flatMap?
+What is the difference between map and flatMap?
+Both of the functions map() and flatMap are used for transformation and mapping operations. map() function produces one output for one input value, whereas flatMap() function produces an arbitrary no of values as output (ie zero or more than zero) for each input value. 
+
+HashTable Internal implimentations?
+what is volatail and transient keywords?
+how should you secure your properties like host name ?
+What is https protocal?
+difference between http and https?
+
+What is garbage collector?
+If gargage collection concet is not introduced programer is responsible for creating and 
+distoing of object but garbage collector will remove the unreferenced objects by default.
+The objects which are created inside the methods by default eligible for garbage collect-
+-ion ofter method execution completes.
+         Once we made an object eligible for GC it may not be destroyed immediately by 
+the GC. Whenever jvm runs GC then only object will be destroyed by the GC. But when exactly
+JVM runs GC we can't expert it is vendor dependent.
+We can request jvm to run garbage collector programmatically, but whether jvm accept our
+ request or not there is no guaranty. But most of the times JVM will accept our request.
+    System class contains a static method GC for this purpose.
+Example:
+System.gc();
+
+Just before destroying any object gc always calls finalize() method to perform cleanup 
+activities.
+We can call finalize() method explicitly then it will be executed just like a normal method
+call and object won't be destroyed. But before destroying any object GC always calls 
+finalize() method
+
+
+The behavior of the GC is vendor dependent and varied from JVM to JVM hence we can't 
+expert exact answer for the following.
+What is the algorithm followed by GC.
+Exactly at what time JVM runs GC.
+In which order GC identifies the eligible objects.
+In which order GC destroys the object etc.
+Whether GC destroys all eligible objects or not.
+
+Memory leaks?
+An object which is not using in our application and it is not eligible for GC such type 
+of objects are called "memory leaks".In the case of memory leaks GC also can't do 
+anything the application will be crashed due to memory problems.In our program if memory
+leaks present then certain point we will get OutOfMemoryException. Hence if an object is
+no longer required then it's highly recommended to make that object eligible for GC.
+By using monitoring tools we can identify memory leaks.
+
+what are the difference scopes of beans in spring boot?
+what is the difference between spring and spring boot?
+What is the @transient in spring boot?
+Internal Implementation of hasttable?
+
+singleton Design pattern?
+https://www.java.designpatterns.jobs4times.com/singleton-design-patterns.html
+
+What is the difference between runnable and callable interfaces?
+What is deep copy and what is shallow copy?    ------------>>> deep clone(),shallow clone().
+What is DDL.Auto?
+What is Serialization versions?
+What is interface hyracheyof JPARepository?
+
+------------------------------------------
+------------------------------------------
+What is fail safe and fail fast?
+Fail-Fast systems abort operation as-fast-as-possible exposing failures immediately and stopping the whole operation. Whereas, Fail-Safe systems don't abort an operation in the case of a failure. Such systems try to avoid raising failures as much as possible.
+
+========================KA================
+gc
+oops
+jvm architetcture
+inheritance
+multi theading'
+compile contsant
+four pillars oops
+packages
+java colletion fw
+data types
+Strings
+
+servlets
+
+hibernate
+Spring 
+===============IMP===============
+What is the difference between collection and collections in Java?
+Collection is used to represent a single unit with a group of individual objects whereas collections is used to operate on collection with several utility methods. Since java 8, collection is an interface with static as well as abstract and default methods whereas collections operate only with static methods.
+
+What is flatMap in Java?
+The "flatMap" method is a powerful tool in the Java Stream API. It allows you to transform each element of a stream into a new stream of elements, and then combine all those streams into a single stream. In this article, we'll take a closer look at how the "flatMap" method works and how to use it in your Java code.
+
+
+
+debugging
+
+multi path file
+
+
+==============
+$ git config --global user.name "your-uname"
+$ git config --global user.email "your-email"
+
+
+Watch Eclipse Shortcuts Video : https://youtu.be/TvYMey5SYa8
+Watch Eclipse Code Debugging Video : https://youtu.be/2WxsClYhreE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

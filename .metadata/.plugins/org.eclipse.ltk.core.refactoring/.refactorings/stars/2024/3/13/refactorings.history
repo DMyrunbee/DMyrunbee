@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;nit.stars.App.java&apos; to &apos;EnhancedForLoop.java&apos;&#x0D;&#x0A;- Original project: &apos;stars&apos;&#x0D;&#x0A;- Original element: &apos;nit.stars.App.java&apos;&#x0D;&#x0A;- Renamed element: &apos;nit.stars.EnhancedForLoop.java&apos;" description="Rename compilation unit &apos;App.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;nit.stars{App.java" name="EnhancedForLoop.java" references="false" stamp="1711817073430" version="1.0"/>
+</session>

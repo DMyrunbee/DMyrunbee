@@ -1,0 +1,23 @@
+package nit.stars;
+
+import java.util.Scanner;
+
+/**
+ * Hello world!
+ *
+ */
+public class CompareStrings 
+{
+    public static void main( String[] args )
+    {
+    	
+    	String s1,s2;
+    	Scanner s=new Scanner(System.in);
+    	System.out.println("Enter the first String");
+    	s1=s.nextLine();
+    	
+    	
+    }
+    
+    
+}

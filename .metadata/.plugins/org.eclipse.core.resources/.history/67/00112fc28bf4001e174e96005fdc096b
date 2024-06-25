@@ -1,0 +1,26 @@
+package darray;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StringDupMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<String>strings=new ArrayList<>();
+		strings.add("apple");
+		strings.add("banana");
+		strings.add("apple");
+		strings.add("orange");
+		strings.add("banana");
+		
+		List<String>duplicates=findDuplicates(strings);
+		System.out.println("Duplicates int the list:"+duplicates);
+		
+	}
+	public static List<String>findDuplicates(List<String>strings){
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package sai;
+
+public class s2 {
+
+	public  static  Integer getsum(Integer inte){
+	    int sum = 0;
+	    for(int i : inte) { 
+	        sum += i;
+	    }
+	    return sum;
+	    }
+	public static void main(String[] args) {
+		
+		
+	
+	}
+
